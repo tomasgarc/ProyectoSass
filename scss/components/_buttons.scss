@@ -1,0 +1,13 @@
+@use '../abstracts/variables';
+
+.button {
+  padding: variables.$spacing;
+  background: variables.$primary-color;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: darken(variables.$primary-color, 10%);
+  }
+}

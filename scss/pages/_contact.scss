@@ -1,0 +1,11 @@
+@use '../abstracts/variables';
+
+.contact {
+  padding: variables.$spacing;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

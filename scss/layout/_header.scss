@@ -1,0 +1,16 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.header {
+  background: variables.$primary-color;
+  color: white;
+  padding: variables.$spacing;
+  @include mixins.flex-center;
+  flex-direction: column;
+
+  nav a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+}
