@@ -1,4 +1,5 @@
-@use '../abstracts/variables';
+@use "sass:color";
+@use "../abstracts/variables";
 
 .button {
   padding: variables.$spacing;
@@ -8,6 +9,6 @@
   cursor: pointer;
 
   &:hover {
-    background: darken(variables.$primary-color, 10%);
+    background: color.adjust(variables.$primary-color, $lightness: -10%);
   }
 }

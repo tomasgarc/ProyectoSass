@@ -1,0 +1,6 @@
+@use '../abstracts/mixins';
+
+.body-layout {
+  @include mixins.grid-layout;
+  min-height: 100vh;
+}

@@ -1,11 +1,15 @@
-@use '../abstracts/variables';
+@use "../abstracts/variables";
 
 .contact {
   padding: variables.$spacing;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    padding: 10px;
   }
 }
