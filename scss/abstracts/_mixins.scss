@@ -17,3 +17,59 @@
   padding: 10px;
   gap: 10px;
 }
+
+@mixin video-div {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+@mixin video-container {
+  position: relative;
+  width: 100%; /* ocupa todo el ancho del contenedor padre */
+  height: 100%;
+  overflow: hidden; /* corta cualquier parte del video que sobresalga */
+}
+
+@mixin video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* hace que el video llene el div sin deformarse */
+  z-index: -1; /* detrás del contenido */
+}
+
+@mixin content {
+  position: relative;
+  z-index: 1; /* encima del video */
+}
+
+@mixin def-button {
+  margin-top: 10px;
+  padding: 10px 24px;
+
+  border-radius: 6px;
+  background: transparent;
+  color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+@mixin def-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+
+  border-bottom: 2px solid #f5f5f5;
+  padding-bottom: 6px;
+}

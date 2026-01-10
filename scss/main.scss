@@ -1,20 +1,18 @@
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
-@use 'abstracts/functions';
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/functions";
 
-@use 'base/reset';
-@use 'base/typography';
+@use "base/reset";
+@use "base/typography";
 
-@use 'layout/header';
-@use 'layout/footer';
+@use "layout/header";
+@use "layout/footer";
 
-@use 'components/buttons';
+@use "components/buttons";
 
-@use 'pages/home';
-@use 'pages/services';
-@use 'pages/contact';
+@use "pages/home";
+@use "pages/contact";
 
-@use 'layout/body-layout';
-@use 'layout/div-wrapper';
-
-
+@use "layout/body-layout";
+@use "layout/div-wrapper";
+@use "layout/navbar";
