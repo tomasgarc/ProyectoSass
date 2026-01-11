@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contacto</title>
-    <link rel="stylesheet" href="scss/main.css" />
-  </head>
 
-  <body class="body-layout">
-    <header class="header">
-      <h1>Contacto</h1>
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="scss/main.css" />
+</head>
+
+<body class="body-layout contact-page">
+  <header>
+    <div class="nav">
+      <h1>Proyecto SASS</h1>
       <nav>
         <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
+        <a href="info.html">Información</a>
         <a href="contacto.html">Contacto</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main class="contact">
-      <div class="div-wrapper">
-        <form>
-          <input type="text" placeholder="Nombre" />
-          <input type="email" placeholder="Email" />
-          <button class="button">Enviar</button>
-        </form>
-      </div>
-    </main>
+  <main>
+    <section class="contact-form-container">
+      <h2>Contacto</h2>
+      <form class="contact-form" action="#" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required />
 
-    <footer class="footer">
-      <p>Contacto</p>
-    </footer>
-  </body>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje..." rows="6" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="nav">
+      <p>© 2026 Desarrollado por Hugo y Tomás. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
 </html>

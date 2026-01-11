@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Servicios</title>
-    <link rel="stylesheet" href="scss/main.css" />
-  </head>
-  <body class="body-layout">
-    <header class="header">
-      <h1>Servicios</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Información</title>
+  <link rel="stylesheet" href="scss/main.css" />
+</head>
+
+<body class="body-layout info-page">
+  <header>
+    <div class="nav">
+      <h1>Proyecto SASS</h1>
       <nav>
         <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
+        <a href="info.html">Información</a>
         <a href="contacto.html">Contacto</a>
       </nav>
-    </header>
+    </div>
+  </header>
+  <main class="images">
+    <article class="card">
+      <img src="public/times.jpg" alt="Times Square">
+      <div class="card-content">
+        <h3>Times Square</h3>
+        <p>El corazón luminoso de Nueva York.</p>
+      </div>
+    </article>
 
-    <main class="services">
-      <div class="card">Diseño Web</div>
-      <div class="card">Desarrollo Frontend</div>
-      <div class="card">Soporte Técnico</div>
-    </main>
+    <article class="card">
+      <img src="public/empire.jpg" alt="Central Park">
+      <div class="card-content">
+        <h3>Empire State</h3>
+        <p>El buque insignia de la ciudad.</p>
+      </div>
+    </article>
 
-    <footer class="footer">
-      <p>© 2026</p>
-    </footer>
-  </body>
+    <article class="card">
+      <img src="public/one-world.jpg" alt="Brooklyn">
+      <div class="card-content">
+        <h3>One World</h3>
+        <p>El edificio construido en memoria a las torres gemelas</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="nav">
+      <p> © 2026 Desarrollado por Hugo y Tomás. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
